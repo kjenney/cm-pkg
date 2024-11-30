@@ -8,8 +8,8 @@ RUN git clone https://github.com/comfyanonymous/ComfyUI
 
 WORKDIR /usr/src/ComfyUI
 
-RUN pip install -r requirements.txt
-RUN pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu124
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu124
 
 WORKDIR /usr/src/ComfyUI/custom_nodes
 
