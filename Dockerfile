@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir torch torchvision torchaudio --extra-index-url ht
 
 WORKDIR /usr/src/ComfyUI/custom_nodes
 
-RUN RUN git clone --depth 1 -b $COMFYMGR_VERSION https://github.com/ltdrdata/ComfyUI-Manager.git
+RUN git clone --depth 1 -b $COMFYMGR_VERSION https://github.com/ltdrdata/ComfyUI-Manager.git
 
 WORKDIR /usr/src/ComfyUI
 
