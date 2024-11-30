@@ -7,18 +7,16 @@ RUN apt update && apt install -y git
 
 WORKDIR /usr/src/
 
-RUN git clone https://github.com/comfyanonymous/ComfyUI
+RUN git clone --depth 1 -b $COMFY_VERSION https://github.com/comfyanonymous/ComfyUI
 
 WORKDIR /usr/src/ComfyUI
 
-RUN git checkout $COMFY_VERSION
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu124
 
 WORKDIR /usr/src/ComfyUI/custom_nodes
 
-RUN git clone https://github.com/ltdrdata/ComfyUI-Manager.git
-RUN git checkout $COMFYMGR_VERSION
+RUN RUN git clone --depth 1 -b $COMFYMGR_VERSION https://github.com/ltdrdata/ComfyUI-Manager.git
 
 WORKDIR /usr/src/ComfyUI
 
