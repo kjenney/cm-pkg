@@ -17,3 +17,7 @@ services:
     runtime: nvidia
     ports:
       - "8188:8188"
+    volumes:
+      - type: bind
+        source: /tmp/snapshot.yaml
+        target: /

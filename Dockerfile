@@ -3,7 +3,9 @@ FROM python:3.10.15-slim
 ARG COMFY_VERSION="v0.3.5"
 ARG COMFYMGR_VERSION="2.54"
 
-RUN apt update && apt install -y git ffmpeg libsm6 libxext6
+RUN apt update && \
+    apt install -y git ffmpeg libsm6 libxext6 && \
+    rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /usr/src/
 
@@ -20,4 +22,4 @@ RUN git clone --depth 1 -b $COMFYMGR_VERSION https://github.com/ltdrdata/ComfyUI
 
 WORKDIR /usr/src/ComfyUI
 
-CMD python main.py --listen 0.0.0.0
+CMD entrypoint.sh
