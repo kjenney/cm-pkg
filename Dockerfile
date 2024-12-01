@@ -3,7 +3,7 @@ FROM python:3.10.15-slim
 ARG COMFY_VERSION="v0.3.5"
 ARG COMFYMGR_VERSION="2.54"
 
-RUN apt update && apt install -y git
+RUN apt update && apt install -y git ffmpeg libsm6 libxext6
 
 WORKDIR /usr/src/
 
