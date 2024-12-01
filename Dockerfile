@@ -24,4 +24,4 @@ RUN git clone --depth 1 -b $COMFYMGR_VERSION https://github.com/ltdrdata/ComfyUI
 
 WORKDIR /usr/src/ComfyUI
 
-CMD entrypoint.sh
+CMD /entrypoint.sh
