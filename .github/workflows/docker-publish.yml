@@ -2,8 +2,10 @@ name: Publish Docker Image
 
 on:
   push:
+    branches:
+      - '**'   # Runs on all branches
     tags:
-      - '*'
+      - '*'    # Runs on tag pushes
 
 jobs:
   build-and-publish:

@@ -1,0 +1,40 @@
+name: Docker Build and Tag
+
+on:
+  push:
+    branches:
+      - 'main'
+    tags:
+      - '*'    # Runs on tag pushes
+
+jobs:
+  create-tag:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Get the latest tag and increment it
+      - name: Get latest tag and increment
+        id: get-latest-tag
+        run: |
+          # Get the latest tag
+          latest=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Latest tag: $latest"
+          
+          # Increment the tag version
+          IFS='.' read -r major minor patch <<<"${latest#v}"
+          patch=$((patch + 1))
+          new_tag="v$major.$minor.$patch"
+          echo "New tag: $new_tag"
+          
+          # Set as output
+          echo "tag=$new_tag" >> $GITHUB_OUTPUT
+
+      # Create and push a new tag
+      - name: Create and push new tag
+        run: |
+          git tag ${{ steps.get-latest-tag.outputs.tag }}
+          git push origin ${{ steps.get-latest-tag.outputs.tag }}
+
