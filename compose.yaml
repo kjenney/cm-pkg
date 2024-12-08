@@ -12,12 +12,20 @@ services:
                 - video
               driver: nvidia
               count: -1
-    image: ghcr.io/kjenney/cm-pkg:v0.10
+    image: comfyui_hunyuan
     network_mode: host
     runtime: nvidia
     ports:
       - "8188:8188"
     volumes:
       - type: bind
-        source: /tmp/snapshot.yaml
-        target: /snapshot.yaml
+        source: "$PWD/snapshot.json"
+        target: /snapshot.json
+      # Bind models externally - override to a directory that exists or comment out
+      - type: bind
+        source: /home/ken/share/diffusion/models
+        target: /usr/src/ComfyUI/models
+      # Bind workflows externally - override to a directory that exists or comment out 
+      - type: bind
+        source: /home/ken/share/diffusion/workflows
+        target: /usr/src/ComfyUI/user/default/workflows
