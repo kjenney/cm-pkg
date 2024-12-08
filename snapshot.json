@@ -1,10 +1,6 @@
 {
     "comfyui": "9a616b81c15cec7f5ddcbc12e349f1adc03fad67",
     "git_custom_nodes": {
-        "https://github.com/ltdrdata/ComfyUI-Manager.git": {
-            "hash": "5a61000daa9de8d5d304dcc47831dd0c9f51cd3e",
-            "disabled": false
-        },
         "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite": {
             "hash": "bdd98085adc85d8fa86c85936cf71462717ae8c1",
             "disabled": false
