@@ -16,6 +16,8 @@ python custom_nodes/ComfyUI-Manager/cm-cli.py save-snapshot --output snapshot.ya
 
 Place `snapshot.yaml` here.
 
+Uncomment out the volume directive in `compose.yaml`.
+
 Start ComfyUI using `docker compose up`
 
 ## Testing

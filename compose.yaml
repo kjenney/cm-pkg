@@ -18,6 +18,7 @@ services:
     ports:
       - "8188:8188"
     volumes:
+      # Optioal - uncomment when you have a snapshot to restore
       - type: bind
         source: "$PWD/snapshot.json"
         target: /snapshot.json
