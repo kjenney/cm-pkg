@@ -13,3 +13,6 @@ python custom_nodes/ComfyUI-Manager/cm-cli.py save-snapshot --output snapshot.ya
 Place `snapshot.yaml` in `/tmp` of the system where you are starting the container.
 
 Start ComfyUI using `docker compose up`
+
+Uses https://github.com/kijai/ComfyUI-HunyuanVideoWrapper - follow instructions there to download models. Check out examples.
+Check out https://www.youtube.com/watch?v=REQJYz-F1ec
