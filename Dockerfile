@@ -4,7 +4,7 @@ ARG COMFY_VERSION="v0.3.7"
 ARG COMFYMGR_VERSION="2.55.3"
 
 RUN apt update && \
-    apt install -y git ffmpeg libsm6 libxext6 cmake && \
+    apt install -y git ffmpeg libsm6 libxext6 cmake build-essential g++ && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/
@@ -31,6 +31,7 @@ RUN pip install -r requirements.txt
 COPY config.ini .
 
 WORKDIR /usr/src/ComfyUI
+ENV COMFYUI_PATH="/usr/src/ComfyUI"
 
 RUN python -m pip install --upgrade pip # To avoid all of the warnings
 

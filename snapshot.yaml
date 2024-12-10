@@ -10,6 +10,9 @@ custom_nodes:
     https://github.com/KoreTeknology/ComfyUI-Universal-Styler:
       disabled: false
       hash: bfe88489ff250a84bc25c210d84a58135f9a8a8f
+    https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait:
+      disabled: false
+      hash: 3bba732915e22f18af0d221b9c5c282990181f1b
     https://github.com/chrisgoringe/cg-use-everywhere:
       disabled: false
       hash: cd06259166a6af4c054c62f540871ca09a359b50
@@ -44,6 +47,7 @@ custom_nodes:
       disabled: false
       hash: d34488e3079ecd10db2fe867c3a7af568115faed
   pips:
+    Cython==3.0.11: ''
     Deprecated==1.2.15: ''
     GitPython==3.1.43: ''
     Jinja2==3.1.4: ''
@@ -88,6 +92,9 @@ custom_nodes:
     cssselect2==0.7.0: ''
     cycler==0.12.1: ''
     ddt==1.7.2: ''
+    dill==0.3.9: ''
+    dlib==19.24.6: ''
+    docstring_parser==0.16: ''
     docutils==0.21.2: ''
     easydict==1.13: ''
     einops==0.8.0: ''
@@ -113,8 +120,10 @@ custom_nodes:
     huggingface-hub==0.26.5: ''
     humanfriendly==10.0: ''
     idna==3.10: ''
+    imageio-ffmpeg==0.5.1: ''
     imageio==2.36.1: ''
     importlib_metadata==8.5.0: ''
+    insightface==0.7.3: ''
     iopath==0.1.10: ''
     jax==0.4.37: ''
     jaxlib==0.4.36: ''
@@ -128,6 +137,7 @@ custom_nodes:
     lazy_loader==0.4: ''
     lightning-utilities==0.11.9: ''
     llvmlite==0.43.0: ''
+    lmdb==1.5.1: ''
     lxml==5.3.0: ''
     manifold3d==3.0.0: ''
     mapbox_earcut==1.0.2: ''
@@ -156,6 +166,7 @@ custom_nodes:
     nvidia-nvtx-cu12==12.4.127: ''
     oauthlib==3.2.2: ''
     omegaconf==2.3.0: ''
+    onnx==1.17.0: ''
     onnxruntime==1.20.1: ''
     open_clip_torch==2.29.0: ''
     opencv-contrib-python==4.10.0.84: ''
@@ -163,15 +174,18 @@ custom_nodes:
     opencv-python==4.10.0.84: ''
     opt_einsum==3.4.0: ''
     packaging==24.2: ''
+    pandas==2.2.3: ''
     peft==0.14.0: ''
     pillow==11.0.0: ''
     pixeloe==0.0.10: ''
     platformdirs==4.3.6: ''
     pooch==1.8.2: ''
     portalocker==3.0.0: ''
+    prettytable==3.12.0: ''
     propcache==0.2.1: ''
     protobuf==4.25.5: ''
     psutil==6.1.0: ''
+    py-cpuinfo==9.0.0: ''
     pycocoevalcap==1.2: ''
     pycocotools==2.0.8: ''
     pycollada==0.8: ''
@@ -181,6 +195,7 @@ custom_nodes:
     pyparsing==3.2.0: ''
     python-dateutil==2.9.0.post0: ''
     pytorch-lightning==2.4.0: ''
+    pytz==2024.2: ''
     qrcode==8.0: ''
     redis==5.2.1: ''
     referencing==0.35.1: ''
@@ -197,10 +212,12 @@ custom_nodes:
     scikit-image==0.24.0: ''
     scikit-learn==1.6.0: ''
     scipy==1.14.1: ''
+    seaborn==0.13.2: ''
     segment-anything==1.0: ''
     sentencepiece==0.2.0: ''
     shapely==2.0.6: ''
     shellingham==1.5.4: ''
+    shtab==1.7.1: ''
     simpleeval==1.0.3: ''
     simsimd==6.2.1: ''
     six==1.17.0: ''
@@ -236,6 +253,10 @@ custom_nodes:
     triton==3.1.0: ''
     typer==0.15.1: ''
     typing_extensions==4.12.2: ''
+    tyro==0.8.5: ''
+    tzdata==2024.2: ''
+    ultralytics-thop==2.0.13: ''
+    ultralytics==8.3.48: ''
     urllib3==1.26.20: ''
     vhacdx==0.0.8.post1: ''
     wcwidth==0.2.13: ''

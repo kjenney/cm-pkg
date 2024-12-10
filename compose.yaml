@@ -12,7 +12,7 @@ services:
                 - video
               driver: nvidia
               count: -1
-    image: ghcr.io/kjenney/cm-pkg:main
+    image: cm #ghcr.io/kjenney/cm-pkg:main
     network_mode: host
     runtime: nvidia
     ports:
