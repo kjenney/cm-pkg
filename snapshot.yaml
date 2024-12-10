@@ -7,9 +7,15 @@ custom_nodes:
     https://github.com/Fannovel16/comfyui_controlnet_aux:
       disabled: false
       hash: 5a049bde9cc117dafc327cded156459289097ea1
+    https://github.com/KoreTeknology/ComfyUI-Universal-Styler:
+      disabled: false
+      hash: bfe88489ff250a84bc25c210d84a58135f9a8a8f
     https://github.com/chrisgoringe/cg-use-everywhere:
       disabled: false
       hash: cd06259166a6af4c054c62f540871ca09a359b50
+    https://github.com/cubiq/ComfyUI_FaceAnalysis:
+      disabled: false
+      hash: 4919e4e931db0edb219ba5086b3c10b8af750631
     https://github.com/cubiq/ComfyUI_IPAdapter_plus:
       disabled: false
       hash: b188a6cb39b512a9c6da7235b880af42c78ccd0d
@@ -19,15 +25,24 @@ custom_nodes:
     https://github.com/jags111/efficiency-nodes-comfyui:
       disabled: false
       hash: 3ead4afd120833f3bffdefeca0d6545df8051798
+    https://github.com/kijai/ComfyUI-Florence2:
+      disabled: false
+      hash: 27714bad54f2c81180392bbcfa56e39c1ad1b991
     https://github.com/ltdrdata/ComfyUI-Inspire-Pack:
       disabled: false
       hash: 9c6065af6d7701fba12f986c52e0b42a5756c6aa
     https://github.com/ltdrdata/ComfyUI-Manager.git:
       disabled: false
       hash: 5a61000daa9de8d5d304dcc47831dd0c9f51cd3e
+    https://github.com/pythongosssss/ComfyUI-Custom-Scripts:
+      disabled: false
+      hash: d6657cc1f04539dbeea38d7bf6d73bc025004fa4
     https://github.com/sipherxyz/comfyui-art-venture:
       disabled: false
       hash: 50abaace756b96f5f5dc2c9d72826ef371afd45e
+    https://github.com/un-seen/comfyui-tensorops:
+      disabled: false
+      hash: d34488e3079ecd10db2fe867c3a7af568115faed
   pips:
     Deprecated==1.2.15: ''
     GitPython==3.1.43: ''
@@ -55,8 +70,8 @@ custom_nodes:
     async-timeout==5.0.1: ''
     attrs==24.2.0: ''
     beautifulsoup4==4.12.3: ''
-    boto3==1.35.77: ''
-    botocore==1.35.77: ''
+    boto3==1.34.86: ''
+    botocore==1.34.162: ''
     cachetools==5.5.0: ''
     certifi==2024.8.30: ''
     cffi==1.17.1: ''
@@ -64,18 +79,23 @@ custom_nodes:
     charset-normalizer==3.4.0: ''
     click==8.1.7: ''
     clip-interrogator==0.6.0: ''
+    color-matcher==0.5.0: ''
+    coloredlogs==15.0.1: ''
     colorlog==6.9.0: ''
     colour-science==0.4.6: ''
     contourpy==1.3.1: ''
     cryptography==44.0.0: ''
     cssselect2==0.7.0: ''
     cycler==0.12.1: ''
+    ddt==1.7.2: ''
+    docutils==0.21.2: ''
     easydict==1.13: ''
     einops==0.8.0: ''
     embreex==2.17.7.post5: ''
     eval_type_backport==0.2.0: ''
     exceptiongroup==1.2.2: ''
     fairscale==0.4.13: ''
+    fal_client==0.5.6: ''
     filelock==3.16.1: ''
     flatbuffers==24.3.25: ''
     flet==0.25.1: ''
@@ -88,8 +108,10 @@ custom_nodes:
     gitdb==4.0.11: ''
     h11==0.14.0: ''
     httpcore==1.0.7: ''
+    httpx-sse==0.4.0: ''
     httpx==0.28.1: ''
     huggingface-hub==0.26.5: ''
+    humanfriendly==10.0: ''
     idna==3.10: ''
     imageio==2.36.1: ''
     importlib_metadata==8.5.0: ''
@@ -134,12 +156,14 @@ custom_nodes:
     nvidia-nvtx-cu12==12.4.127: ''
     oauthlib==3.2.2: ''
     omegaconf==2.3.0: ''
+    onnxruntime==1.20.1: ''
     open_clip_torch==2.29.0: ''
     opencv-contrib-python==4.10.0.84: ''
     opencv-python-headless==4.10.0.84: ''
     opencv-python==4.10.0.84: ''
     opt_einsum==3.4.0: ''
     packaging==24.2: ''
+    peft==0.14.0: ''
     pillow==11.0.0: ''
     pixeloe==0.0.10: ''
     platformdirs==4.3.6: ''
@@ -158,10 +182,12 @@ custom_nodes:
     python-dateutil==2.9.0.post0: ''
     pytorch-lightning==2.4.0: ''
     qrcode==8.0: ''
+    redis==5.2.1: ''
     referencing==0.35.1: ''
     regex==2024.11.6: ''
     rembg==2.0.60: ''
     repath==0.9.0: ''
+    replicate==1.0.4: ''
     reportlab==4.2.5: ''
     requests==2.32.3: ''
     rich==13.9.4: ''
@@ -185,6 +211,7 @@ custom_nodes:
     soupsieve==2.6: ''
     spandrel==0.4.0: ''
     stringzilla==3.11.0: ''
+    surrealist==1.0.7: ''
     svg.path==6.3: ''
     svglib==1.5.1: ''
     sympy==1.13.1: ''
@@ -214,6 +241,7 @@ custom_nodes:
     wcwidth==0.2.13: ''
     webcolors==24.11.1: ''
     webencodings==0.5.1: ''
+    websocket-client==1.8.0: ''
     wget==3.2: ''
     wrapt==1.17.0: ''
     xatlas==0.0.9: ''
