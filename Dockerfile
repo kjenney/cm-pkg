@@ -4,7 +4,7 @@ ARG COMFY_VERSION="v0.3.7"
 ARG COMFYMGR_VERSION="2.55.3"
 
 RUN apt update && \
-    apt install -y git ffmpeg libsm6 libxext6 && \
+    apt install -y git ffmpeg libsm6 libxext6 cmake && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/
