@@ -12,7 +12,7 @@ https://www.patreon.com/posts/shoot-epic-with-117830088?utm_medium=clipboard_cop
 
 ## Quick Start
 
-1. Update the binds in `compose.yaml` to match where your models and workflows are.
+1. Update the binds in `compose.yaml` to match where your models, workflows, inputs, and outputs are.
 
 2. Start ComfyUI using `docker compose up`
 

@@ -34,3 +34,9 @@ services:
       - type: bind
         source: /home/ken/share/diffusion/workflows
         target: /usr/src/ComfyUI/user/default/workflows
+      - type: bind
+        source: /home/ken/share/diffusion/input
+        target: /usr/src/ComfyUI/input
+      - type: bind
+        source: /home/ken/share/diffusion/output
+        target: /usr/src/ComfyUI/output
