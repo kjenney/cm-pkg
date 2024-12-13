@@ -4,50 +4,40 @@ custom_nodes:
   - disabled: false
     filename: websocket_image_save.py
   git_custom_nodes:
+    https://github.com/Fannovel16/ComfyUI-Frame-Interpolation:
+      disabled: false
+      hash: c336f7184cb1ac1243381e725fea1ad2c0a10c09
     https://github.com/Fannovel16/comfyui_controlnet_aux:
       disabled: false
       hash: 5a049bde9cc117dafc327cded156459289097ea1
-    https://github.com/KoreTeknology/ComfyUI-Universal-Styler:
+    https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite:
       disabled: false
-      hash: bfe88489ff250a84bc25c210d84a58135f9a8a8f
-    https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait:
+      hash: 6953fa21443cf55f7c3b61ed3f4c87c5d3677fe1
+    https://github.com/akatz-ai/ComfyUI-DepthCrafter-Nodes:
       disabled: false
-      hash: 3bba732915e22f18af0d221b9c5c282990181f1b
-    https://github.com/chrisgoringe/cg-use-everywhere:
-      disabled: false
-      hash: cd06259166a6af4c054c62f540871ca09a359b50
-    https://github.com/cubiq/ComfyUI_FaceAnalysis:
-      disabled: false
-      hash: 4919e4e931db0edb219ba5086b3c10b8af750631
-    https://github.com/cubiq/ComfyUI_IPAdapter_plus:
-      disabled: false
-      hash: b188a6cb39b512a9c6da7235b880af42c78ccd0d
+      hash: 56b5a0627e5076bf0ab0f1c442d5f62fa19febda
     https://github.com/cubiq/ComfyUI_essentials:
       disabled: false
       hash: 33ff89fd354d8ec3ab6affb605a79a931b445d99
-    https://github.com/jags111/efficiency-nodes-comfyui:
+    https://github.com/giriss/comfy-image-saver:
       disabled: false
-      hash: 3ead4afd120833f3bffdefeca0d6545df8051798
-    https://github.com/kijai/ComfyUI-Florence2:
+      hash: 65e6903eff274a50f8b5cd768f0f96baf37baea1
+    https://github.com/kijai/ComfyUI-CogVideoXWrapper:
       disabled: false
-      hash: 27714bad54f2c81180392bbcfa56e39c1ad1b991
-    https://github.com/ltdrdata/ComfyUI-Inspire-Pack:
+      hash: 795f8b05659dfa5ec6b216fb698bcca6fda34fdb
+    https://github.com/kijai/ComfyUI-KJNodes:
       disabled: false
-      hash: 9c6065af6d7701fba12f986c52e0b42a5756c6aa
-    https://github.com/ltdrdata/ComfyUI-Manager.git:
+      hash: 8c590fd5a023ee14b5617347567752bf62ea4cd6
+    https://github.com/kijai/ComfyUI-LivePortraitKJ:
       disabled: false
-      hash: 5a61000daa9de8d5d304dcc47831dd0c9f51cd3e
-    https://github.com/pythongosssss/ComfyUI-Custom-Scripts:
+      hash: 4d9dc6205b793ffd0fb319816136d9b8c0dbfdff
+    https://github.com/ltdrdata/ComfyUI-Impact-Pack:
       disabled: false
-      hash: d6657cc1f04539dbeea38d7bf6d73bc025004fa4
-    https://github.com/sipherxyz/comfyui-art-venture:
+      hash: ff9c30787c1b2cbe6337162876344a3906278575
+    https://github.com/rgthree/rgthree-comfy:
       disabled: false
-      hash: 50abaace756b96f5f5dc2c9d72826ef371afd45e
-    https://github.com/un-seen/comfyui-tensorops:
-      disabled: false
-      hash: d34488e3079ecd10db2fe867c3a7af568115faed
+      hash: 70756c044d805ffc260568ca3fe9eafaed5e6363
   pips:
-    Cython==3.0.11: ''
     Deprecated==1.2.15: ''
     GitPython==3.1.43: ''
     Jinja2==3.1.4: ''
@@ -74,15 +64,11 @@ custom_nodes:
     async-timeout==5.0.1: ''
     attrs==24.2.0: ''
     beautifulsoup4==4.12.3: ''
-    boto3==1.34.86: ''
-    botocore==1.34.162: ''
-    cachetools==5.5.0: ''
     certifi==2024.8.30: ''
     cffi==1.17.1: ''
     chardet==5.2.0: ''
     charset-normalizer==3.4.0: ''
     click==8.1.7: ''
-    clip-interrogator==0.6.0: ''
     color-matcher==0.5.0: ''
     coloredlogs==15.0.1: ''
     colorlog==6.9.0: ''
@@ -92,21 +78,18 @@ custom_nodes:
     cssselect2==0.7.0: ''
     cycler==0.12.1: ''
     ddt==1.7.2: ''
+    diffusers==0.31.0: ''
     dill==0.3.9: ''
-    dlib==19.24.6: ''
-    docstring_parser==0.16: ''
     docutils==0.21.2: ''
     easydict==1.13: ''
     einops==0.8.0: ''
     embreex==2.17.7.post5: ''
     eval_type_backport==0.2.0: ''
     exceptiongroup==1.2.2: ''
-    fairscale==0.4.13: ''
-    fal_client==0.5.6: ''
     filelock==3.16.1: ''
     flatbuffers==24.3.25: ''
     flet==0.25.1: ''
-    fonttools==4.55.2: ''
+    fonttools==4.55.3: ''
     frozenlist==1.5.0: ''
     fsspec==2024.10.0: ''
     ftfy==6.3.1: ''
@@ -115,7 +98,6 @@ custom_nodes:
     gitdb==4.0.11: ''
     h11==0.14.0: ''
     httpcore==1.0.7: ''
-    httpx-sse==0.4.0: ''
     httpx==0.28.1: ''
     huggingface-hub==0.26.5: ''
     humanfriendly==10.0: ''
@@ -123,11 +105,9 @@ custom_nodes:
     imageio-ffmpeg==0.5.1: ''
     imageio==2.36.1: ''
     importlib_metadata==8.5.0: ''
-    insightface==0.7.3: ''
     iopath==0.1.10: ''
     jax==0.4.37: ''
     jaxlib==0.4.36: ''
-    jmespath==1.0.1: ''
     joblib==1.4.2: ''
     jsonschema-specifications==2024.10.1: ''
     jsonschema==4.23.0: ''
@@ -135,9 +115,7 @@ custom_nodes:
     kornia==0.7.4: ''
     kornia_rs==0.1.7: ''
     lazy_loader==0.4: ''
-    lightning-utilities==0.11.9: ''
     llvmlite==0.43.0: ''
-    lmdb==1.5.1: ''
     lxml==5.3.0: ''
     manifold3d==3.0.0: ''
     mapbox_earcut==1.0.2: ''
@@ -148,6 +126,7 @@ custom_nodes:
     mediapipe==0.10.18: ''
     ml_dtypes==0.5.0: ''
     mpmath==1.3.0: ''
+    mss==10.0.0: ''
     multidict==6.1.0: ''
     networkx==3.4.2: ''
     numba==0.60.0: ''
@@ -166,59 +145,47 @@ custom_nodes:
     nvidia-nvtx-cu12==12.4.127: ''
     oauthlib==3.2.2: ''
     omegaconf==2.3.0: ''
+    onnx2torch==1.5.15: ''
     onnx==1.17.0: ''
-    onnxruntime==1.20.1: ''
-    open_clip_torch==2.29.0: ''
+    onnxruntime-gpu==1.20.1: ''
     opencv-contrib-python==4.10.0.84: ''
     opencv-python-headless==4.10.0.84: ''
     opencv-python==4.10.0.84: ''
     opt_einsum==3.4.0: ''
     packaging==24.2: ''
-    pandas==2.2.3: ''
     peft==0.14.0: ''
+    piexif==1.1.3: ''
     pillow==11.0.0: ''
     pixeloe==0.0.10: ''
     platformdirs==4.3.6: ''
     pooch==1.8.2: ''
     portalocker==3.0.0: ''
-    prettytable==3.12.0: ''
     propcache==0.2.1: ''
     protobuf==4.25.5: ''
     psutil==6.1.0: ''
-    py-cpuinfo==9.0.0: ''
-    pycocoevalcap==1.2: ''
-    pycocotools==2.0.8: ''
     pycollada==0.8: ''
     pycparser==2.22: ''
     pydantic==2.10.3: ''
     pydantic_core==2.27.1: ''
+    pykalman==0.9.7: ''
     pyparsing==3.2.0: ''
     python-dateutil==2.9.0.post0: ''
-    pytorch-lightning==2.4.0: ''
-    pytz==2024.2: ''
-    qrcode==8.0: ''
-    redis==5.2.1: ''
     referencing==0.35.1: ''
     regex==2024.11.6: ''
     rembg==2.0.60: ''
     repath==0.9.0: ''
-    replicate==1.0.4: ''
     reportlab==4.2.5: ''
     requests==2.32.3: ''
     rich==13.9.4: ''
     rpds-py==0.22.3: ''
-    s3transfer==0.10.4: ''
     safetensors==0.4.5: ''
     scikit-image==0.24.0: ''
     scikit-learn==1.6.0: ''
     scipy==1.14.1: ''
-    seaborn==0.13.2: ''
     segment-anything==1.0: ''
     sentencepiece==0.2.0: ''
     shapely==2.0.6: ''
     shellingham==1.5.4: ''
-    shtab==1.7.1: ''
-    simpleeval==1.0.3: ''
     simsimd==6.2.1: ''
     six==1.17.0: ''
     smmap==5.0.1: ''
@@ -227,8 +194,7 @@ custom_nodes:
     soundfile==0.12.1: ''
     soupsieve==2.6: ''
     spandrel==0.4.0: ''
-    stringzilla==3.11.0: ''
-    surrealist==1.0.7: ''
+    stringzilla==3.11.1: ''
     svg.path==6.3: ''
     svglib==1.5.1: ''
     sympy==1.13.1: ''
@@ -242,7 +208,6 @@ custom_nodes:
     tomli==2.2.1: ''
     torch==2.5.1: ''
     torchaudio==2.5.1: ''
-    torchmetrics==1.6.0: ''
     torchsde==0.2.6: ''
     torchvision==0.20.1: ''
     tqdm==4.67.1: ''
@@ -253,19 +218,14 @@ custom_nodes:
     triton==3.1.0: ''
     typer==0.15.1: ''
     typing_extensions==4.12.2: ''
-    tyro==0.8.5: ''
-    tzdata==2024.2: ''
-    ultralytics-thop==2.0.13: ''
-    ultralytics==8.3.48: ''
     urllib3==1.26.20: ''
     vhacdx==0.0.8.post1: ''
     wcwidth==0.2.13: ''
-    webcolors==24.11.1: ''
     webencodings==0.5.1: ''
-    websocket-client==1.8.0: ''
     wget==3.2: ''
     wrapt==1.17.0: ''
     xatlas==0.0.9: ''
+    xformers==0.0.28.post3: ''
     xxhash==3.5.0: ''
     yacs==0.1.8: ''
     yapf==0.43.0: ''
