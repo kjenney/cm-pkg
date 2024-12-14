@@ -18,19 +18,20 @@ services:
     ports:
       - "8188:8188"
     volumes:
-      # Optioal - uncomment when you have a snapshot to restore
       - type: bind
         source: "$PWD/snapshot.yaml"
         target: /snapshot.yaml
-      # Optioal - uncomment when you have a snapshot to restore
-      #- type: bind
-      #  source: "$PWD/snapshot.json"
-      #  target: /snapshot.json
       # Bind models externally - override to a directory that exists or comment out
-      - type: bind
-        source: /home/ken/share/diffusion/models
-        target: /usr/src/ComfyUI/models
+      #- type: bind
+      #  source: /home/ken/share/diffusion/models
+      #  target: /usr/src/ComfyUI/models
       # Bind workflows externally - override to a directory that exists or comment out 
-      - type: bind
-        source: /home/ken/share/diffusion/workflows
-        target: /usr/src/ComfyUI/user/default/workflows
+      #- type: bind
+      #  source: /home/ken/share/diffusion/workflows
+      #  target: /usr/src/ComfyUI/user/default/workflows
+      #- type: bind
+      #  source: /home/ken/share/diffusion/input
+      #  target: /usr/src/ComfyUI/input
+      #- type: bind
+      #  source: /home/ken/share/diffusion/output
+      #  target: /usr/src/ComfyUI/output
